@@ -4,9 +4,9 @@ import nl.paulienvanalst.adventOfCode.twentytwenty.utils.Utils
 
 data class Policy(val minOcc: Int, val maxOcc: Int, val character: String) {
     companion object {
-        val regexMinOcc = "\\b(0?[1-9]|1[0-9]|2[0-5])\\b(?=-)".toRegex()
-        val regexForMaxOcc = "\\b(0?[1-9]|1[0-9]|2[0-5])\\b(?!-)".toRegex()
-        val regexChar = "[a-zA-Z](?!\\s)".toRegex()
+        private val regexMinOcc = "\\b(0?[1-9]|1[0-9]|2[0-5])\\b(?=-)".toRegex()
+        private val regexForMaxOcc = "\\b(0?[1-9]|1[0-9]|2[0-5])\\b(?!-)".toRegex()
+        private val regexChar = "[a-zA-Z](?!\\s)".toRegex()
 
         fun from(policy: String) : Policy {
             return Policy(
