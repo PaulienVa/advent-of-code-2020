@@ -33,7 +33,6 @@ val nrOfTreesOnFirstSlope = countTrees(3, 1)
 
 println("Found $nrOfTreesOnFirstSlope (274) trees on the slope")
 
-
 println("Solution to part 2:")
 
 val slopes = listOf(
@@ -46,4 +45,4 @@ val nrOfTreesOnSlopes = slopes.map {
     BigInteger("$it")
 }.reduce { acc, it -> acc * it }
 
-println("Found $nrOfTreesOnSlopes on all slopes")
+println("Found $nrOfTreesOnSlopes (6050183040) on all slopes")
